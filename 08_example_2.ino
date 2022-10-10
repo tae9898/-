@@ -49,12 +49,12 @@ void loop() {
   } else {    // In desired Range
     if (_DIST_MIN < distance < 200){
     int K1 = (255/200)*distance;
-    int J1 = 11;
+   
   analogWrite(PIN_LED,K1);
   }
   if (200 < distance < _DIST_MAX){
     int K2 =  510-(255/200)*distance  ;
-    int J2 = 154;
+    
 
   analogWrite(PIN_LED,K2);
   }       // LED ON  
